@@ -6,7 +6,7 @@ eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 img = cv2.imread('image2.jpg')
 grayImage = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-faces = face_cascade.detectMultiScale(grayImage, 1.1, 20)
+faces = face_cascade.detectMultiScale(grayImage, 1.1, 10)
 if len(faces)==0:
     print ("no faces found")
 else:
